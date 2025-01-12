@@ -42,7 +42,7 @@ export const Header = () => {
           <div className="hidden md:flex items-center space-x-8">
             <NavLink href="#Bienvenido">Bienvenido</NavLink>
             <NavLink href="#Servicios">Servicios</NavLink>
-            <NavLink href="#nosotros">Nosotros</NavLink>
+            <NavLink href="#SobreNosotros">Nosotros</NavLink>
           </div>
 
           {/* Mobile menu button */}
@@ -65,8 +65,8 @@ export const Header = () => {
             <div className="flex flex-col space-y-4">
               <MobileNavLink href="#Bienvenido">Bienvenido</MobileNavLink>
               <MobileNavLink href="#Servicios">Servicios</MobileNavLink>
-              <MobileNavLink href="#nosotros">Nosotros</MobileNavLink>
-              <MobileNavLink href="#contacto">Contacto</MobileNavLink>
+              <MobileNavLink href="#SobreNosotros">Nosotros</MobileNavLink>
+              <MobileNavLink href="#Contacto">Contacto</MobileNavLink>
             </div>
           </motion.div>
         )}

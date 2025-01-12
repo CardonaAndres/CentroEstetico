@@ -36,16 +36,12 @@ export const Carousel = () => {
           </AnimatePresence>
   
           {/* Navigation */}
-          <button
-            onClick={handlePrev}
-            className="absolute top-1/2 left-4 -translate-y-1/2 bg-white/70 p-3 rounded-full shadow-lg hover:bg-white/90 transition"
-          >
+          <button onClick={handlePrev} aria-label="prev-button"
+            className="absolute top-1/2 left-4 -translate-y-1/2 bg-white/70 p-3 rounded-full shadow-lg hover:bg-white/90 transition">
             <ChevronLeft className="w-6 h-6 text-gray-700" />
           </button>
-          <button
-            onClick={handleNext}
-            className="absolute top-1/2 right-4 -translate-y-1/2 bg-white/70 p-3 rounded-full shadow-lg hover:bg-white/90 transition"
-          >
+          <button onClick={handleNext} aria-label="next-button"
+            className="absolute top-1/2 right-4 -translate-y-1/2 bg-white/70 p-3 rounded-full shadow-lg hover:bg-white/90 transition">
             <ChevronRight className="w-6 h-6 text-gray-700" />
           </button>
         </div>
@@ -53,9 +49,7 @@ export const Carousel = () => {
         {/* Indicators */}
         <div className="flex justify-center space-x-2 mt-4">
           {images.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => setCurrentIndex(index)}
+            <button key={index} aria-label={`position number: ${index}`} onClick={() => setCurrentIndex(index)}
               className={`w-3 h-3 rounded-full ${
                 currentIndex === index ? "bg-pink-500" : "bg-gray-300"
               }`}

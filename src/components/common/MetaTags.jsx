@@ -50,12 +50,11 @@ export const MetaTags = () => (
           streetAddress: "Cll 33 #52-44",
           addressLocality: "Barrio Obrero",
           addressRegion: "Bello",
-          postalCode: "12345",
+          postalCode: "055422",
           addressCountry: "CO",
         },
         sameAs: [
-          "https://facebook.com/TuPaginaDeFacebook", // Asegúrate de tener tus redes sociales
-          "https://instagram.com/TuPaginaDeInstagram",
+          "https://www.instagram.com/spa_cuidadoyarmonia24/",
         ],
         openingHours: "Mo-Su 09:00-19:00", // Horario de atención
       })}
