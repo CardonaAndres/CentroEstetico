@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { MapPin } from 'lucide-react';
+import { MapPin, Clock } from 'lucide-react';
 import { useContact } from '../../hooks/useContact';
 
 export const ContactSection = () => {
@@ -39,21 +39,23 @@ export const ContactSection = () => {
                     </div>
 
                     <div className="bg-white rounded-2xl shadow-lg p-8">
-                    <h3 className="text-2xl font-light text-gray-800 mb-6">
-                        <MapPin className="inline-block w-6 h-6 mr-2 text-pink-400" />
-                        Ubicación
-                    </h3>
-                    <p className="text-gray-600 mb-4">
-                        Bello, Barrio Obrero - Cll 33 #52-44
-                    </p>
-                    <p className="text-gray-600">
-                        Horario: Lunes a Domingo
-                        <br />
-                        8:00 AM - 8:00 PM
-                    </p>
+                        <h3 className="text-xl font-light text-gray-800 mb-6">
+                            <MapPin className="inline-block w-6 h-6 mr-2 text-pink-400" />
+                            Ubicación
+                        </h3>
+                        <p className="text-gray-600 mb-4">
+                            Bello, Barrio Obrero - Cll 33 #52-44
+                        </p>
+                        <div className="flex items-center text-gray-800 mb-4">
+                            <Clock className="inline-block w-6 h-6 mr-2 text-pink-400" />
+                            <span className="text-xl font-light">Horario</span>
+                        </div>   
+                        <div className="space-y-2 text-gray-600">
+                            <p>Lunes - Viernes: <span className="font-medium">8 AM - 8 PM</span></p>
+                            <p>Fines de semana: <span className="font-medium">9 AM - 6 PM</span></p>
+                        </div>
                     </div>
                 </motion.div>
-
                 {/* Map */}
                 <motion.div initial={{ opacity: 0, x: 20 }}
                     whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}

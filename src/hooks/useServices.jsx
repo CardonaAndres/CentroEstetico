@@ -53,7 +53,7 @@ export const useServices = () => {
       name: "Día de Spa",
       description: "Un día completo de relajación que incluye tratamientos faciales, corporales, masajes, acceso a sauna y jacuzzi.",
       details: [
-        "Duración: 6 horas",
+        "Duración: 2 horas",
         "Técnicas: Relajante, rejuvenecedora y de bienestar integral",
         "Incluye lunch saludable y acceso a zonas de relajación"
       ],
