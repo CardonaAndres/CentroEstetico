@@ -5,8 +5,10 @@ import react from '@vitejs/plugin-react-swc'
 export default defineConfig({
   plugins: [
     react(),
-    VitePluginSitemap({
-      hostname: 'https://centro-estetico-xi.vercel.app' 
-    })
+    /*
+      VitePluginSitemap({
+        hostname: 'https://centro-estetico-xi.vercel.app' 
+      }) 
+    */
   ],
 })
